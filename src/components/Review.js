@@ -23,9 +23,9 @@ export default function Review() {
 
   return (
     <div className='review'>
-        <h4 className='author' id="author-id">{review.name}</h4>
+        <h4 className='author' id={`author-${review.id}`}>{review.name}</h4>
         <p className='job'>{review.job}</p>
-        <p className='text'>{review.text}</p>
+        <p className='info'>{review.text}</p>
         <img className='person-img' src={review.image} alt={review.name}/>
         <div>
             <button className='prev-btn' onClick={handlePrevious}>Prev</button>
